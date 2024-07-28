@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Rickroll </title>
+</head>
+<body>
+	<h1>Нажмите на кнопку</h1>
+	<button onclick="rickroll()">Не нажимайте!</button>
+	
+	<audio id="rickroll-audio" src="https://www.youtube.com/audiolibrary_download?vid=4fndeDfaWCg" style="display: none;"></audio>
+	
+	<script>
+		function rickroll() {
+			document.getElementById("rickroll-audio").play();
+			document.body.innerHTML = '<h1>Ну, вы же сами напросились...</h1><iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+		}
+	</script>
+</body>
+</html>
